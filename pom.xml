@@ -6,7 +6,7 @@
     <name>GameInterop</name>
     <groupId>com.github.Hookz</groupId>
     <artifactId>Project2-2-GameInterop</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <properties>
         <maven.compiler.target>10</maven.compiler.target>
         <maven.compiler.source>10</maven.compiler.source>
