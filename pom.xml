@@ -6,6 +6,7 @@
     <name>GameInterop</name>
     <groupId>com.github.Hookz</groupId>
     <artifactId>Project2-2-GameInterop</artifactId>
+    <description>Multi-agent game interoperability module</description>
     <version>1.0</version>
     <properties>
         <maven.compiler.target>10</maven.compiler.target>
@@ -16,6 +17,14 @@
 	<connection>scm:git:ssh://git@github.com/Hookz/Project2-2-GameInterop.git</connection>
       <tag>project2-2-gameinterop-1.0</tag>
   </scm>
+    <developers>
+        <developer>
+            <name>Michal Jarski</name>
+            <email>michal@jarski.eu</email>
+            <organization>Maastricht University</organization>
+            <organizationUrl>https://www.maastrichtuniversity.nl</organizationUrl>
+        </developer>
+    </developers>
     <build>
         <plugins>
             <plugin>
@@ -101,4 +110,10 @@
         </repository>
         <downloadUrl>https://oss.sonatype.org/content/groups/public/com/github/hookz/project2-2-gameinterop</downloadUrl>
     </distributionManagement>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 </project>
