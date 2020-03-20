@@ -14,7 +14,7 @@
     <scm>
 	<url>https://github.com/Hookz/Project2-2-GameInterop</url>
 	<connection>scm:git:https://git@github.com/Hookz/Project2-2-GameInterop.git</connection>
-      <tag>project2-2-gameinterop-1.0</tag>
+      <tag>xchange-1.0</tag>
   </scm>
     <build>
         <plugins>
