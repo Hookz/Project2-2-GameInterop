@@ -108,6 +108,11 @@
             <name>Nexus Release Repository</name>
             <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
+        <repository>
+          <id>github</id>
+          <name>GitHub OWNER Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/Hookz/Project2-2-GameInterop</url>
+        </repository>
         <downloadUrl>https://oss.sonatype.org/content/groups/public/com/github/hookz/project2-2-gameinterop</downloadUrl>
     </distributionManagement>
     <licenses>
