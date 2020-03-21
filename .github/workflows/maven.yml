@@ -17,3 +17,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Run tests
       run: java -cp ./target/test-classes/:./target/classes/ AllTests
+    - name: Publish to GitHub Packages Apache Maven
+      run: mvn deploy
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
