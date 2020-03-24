@@ -1,3 +1,4 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.Hookz/Project2-2-GameInterop.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.Hookz%22%20AND%20a:%22Project2-2-GameInterop%22)
 This is the common API that will allow to implement agents independently.
 
 **Important!**
