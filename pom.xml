@@ -7,7 +7,7 @@
     <groupId>com.github.Hookz</groupId>
     <artifactId>Project2-2-GameInterop</artifactId>
     <description>Multi-agent game interoperability module</description>
-    <version>1.0</version>
+    <version>1.1</version>
     <properties>
         <maven.compiler.target>10</maven.compiler.target>
         <maven.compiler.source>10</maven.compiler.source>
