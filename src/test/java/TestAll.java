@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author Tomasz Darmetko
  */
-public class AllTests extends SimpleUnitTest {
+public class TestAll extends SimpleUnitTest {
 
     public static void main(String[] args) {
         InteropTests.main(args);
