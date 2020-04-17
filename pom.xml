@@ -7,24 +7,11 @@
     <groupId>com.github.Hookz</groupId>
     <artifactId>Project2-2-GameInterop</artifactId>
     <description>Multi-agent game interoperability module</description>
-    <version>1.2</version>
+    <version>1.1</version>
     <properties>
         <maven.compiler.target>10</maven.compiler.target>
         <maven.compiler.source>10</maven.compiler.source>
     </properties>
-    <scm>
-	<url>https://github.com/Hookz/Project2-2-GameInterop</url>
-	<connection>scm:git:ssh://git@github.com/Hookz/Project2-2-GameInterop.git</connection>
-      <tag>project2-2-gameinterop-1.2</tag>
-  </scm>
-    <developers>
-        <developer>
-            <name>Michal Jarski</name>
-            <email>michal@jarski.eu</email>
-            <organization>Maastricht University</organization>
-            <organizationUrl>https://www.maastrichtuniversity.nl</organizationUrl>
-        </developer>
-    </developers>
 
     <dependencies>
         <dependency>
@@ -33,9 +20,41 @@
             <version>11.0.2</version>
         </dependency>
     </dependencies>
-
+        <scm>
+    	<url>https://github.com/Hookz/Project2-2-GameInterop</url>
+    	<connection>scm:git:ssh://git@github.com/Hookz/Project2-2-GameInterop.git</connection>
+          <tag>project2-2-gameinterop-1.0</tag>
+      </scm>
+        <developers>
+            <developer>
+                <name>Michal Jarski</name>
+                <email>michal@jarski.eu</email>
+                <organization>Maastricht University</organization>
+                <organizationUrl>https://www.maastrichtuniversity.nl</organizationUrl>
+            </developer>
+        </developers>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
@@ -130,26 +149,4 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
-</project>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.2</version>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}/dependencies</outputDirectory>
-                            <overWriteReleases>false</overWriteReleases>
-                            <overWriteSnapshots>false</overWriteSnapshots>
-                            <overWriteIfNewer>true</overWriteIfNewer>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
